@@ -335,18 +335,3 @@ class AI:
             )
         
         return (custom_response if custom_response is not None else resp), {'learned': bool(learn_v and learn_filter_failed and custom_response is None and self.config.learning)}
-
-if __name__ == '__main__':
-    config = Configuration.default()
-    config.models_path = 'Advanced AI/models'
-    config.monitor = Monitor(limit=100)
-
-    my_ai = AI(
-        model = 'stupid-model',
-        configuration = config
-    )
-
-    while True:
-        inp = input('You: ')
-        resp = my_ai.ask(inp)
-        print(f'AI: {resp}')
