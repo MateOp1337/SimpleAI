@@ -4,3 +4,4 @@
 # Except these files in the root directory
 !/.gitignore
 !/app.py
+!/requirements.txt
