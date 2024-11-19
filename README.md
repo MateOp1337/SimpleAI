@@ -48,7 +48,7 @@ config.models_path = 'models'
 
 # Create AI object
 my_ai = AI(
-    model='stupid-model',
+    model='my-model',
     configuration=config
 )
 
